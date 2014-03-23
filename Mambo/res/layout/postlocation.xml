@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Category"
+            android:id="@+id/Category_title"/>
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Category_post"
+            >
+        <RadioButton android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:text="EMERGENCY"
+                     android:onClick="onRadioButtonClicked"
+                     android:id="@+id/emergency"
+                    />
+        <RadioButton android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Social"
+                     android:onClick="onRadioButtonClicked"
+                     android:id="@+id/social"/>
+        <RadioButton android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Promotions"
+                     android:onClick="onRadioButtonClicked"
+                     android:id="@+id/promo"/>
+        <RadioButton android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Free"
+                     android:onClick="onRadioButtonClicked"
+                     android:id="@+id/free" />
+        <RadioButton android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Miscellaneous"
+                     android:onClick="onRadioButtonClicked"
+                     android:id="@+id/misc"/>
+    </RadioGroup>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Location"
+            android:id="@+id/Location_title"/>
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use Current Location"
+            android:id="@+id/Location_post"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Enter in Address"
+            android:id="@+id/Address_title"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Address_post"
+            android:layout_gravity="center_horizontal"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Google Map Goes Here!!"
+            android:id="@+id/textView2"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/Submit2_post"
+            android:layout_gravity="center_horizontal"/>
+</LinearLayout>
